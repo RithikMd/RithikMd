@@ -46,7 +46,7 @@ var { version } = await fetchLatestBaileysVersion()
 const conn = makeWASocket({
         logger: P({ level: 'silent' }),
         printQRInTerminal: false,
-        browser: Browsers.macOS("Firefox"),
+        browser: Browsers.macOS("Chrome"),
         syncFullHistory: true,
         auth: state,
         version
@@ -71,7 +71,7 @@ console.log('Bot connected to whatsapp âœ…')
 
 let up = `Wa-BOT connected successful âœ…\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/900435c6d3157c98c3c88.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/QjTjYXg/43a881bca19f0b1f.jpg` }, caption: up })
 
 }
 })
